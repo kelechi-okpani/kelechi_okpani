@@ -30,12 +30,13 @@ export function AboutSection() {
             About
           </p>
           <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-            Engineer first. Craftsman always.
+             Designing experiences. Engineering products.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            I'm Kelechi — a frontend engineer with 5+ years of experience shipping
-            polished products for fintech, SaaS and consumer platforms. I'm based in
-            Nigeria and actively seeking a relocation role in Europe.
+            I'm Kelechi — a Design Engineer with 5+ years of experience transforming
+            ideas into intuitive, production-ready digital experiences. I bridge the gap
+            between design and engineering, crafting scalable interfaces, design systems,
+            and high-performance products for fintech and SaaS companies.
           </p>
         </div>
 

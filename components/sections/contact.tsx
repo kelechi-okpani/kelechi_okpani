@@ -2,7 +2,7 @@
 import { useState } from "react";
 import {  Mail, Send } from "lucide-react";
 import { profile } from "@/lib/data/project-data";
-
+import { FaLinkedinIn, FaGithub  } from "react-icons/fa6";
 
 
 export function ContactSection() {
@@ -61,7 +61,9 @@ export function ContactSection() {
               className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-elevated"
             >
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                {/* <Linkedin className="h-5 w-5" /> */}
+                <FaLinkedinIn className="h-5 w-5" />
+    
+
               </span>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">LinkedIn</p>
@@ -76,7 +78,7 @@ export function ContactSection() {
               className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-elevated"
             >
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                {/* <Linkedin className="h-5 w-5" /> */}
+                <FaGithub className="h-5 w-5" />
               </span>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Github</p>
@@ -90,7 +92,7 @@ export function ContactSection() {
               className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-elevated"
             >
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                {/* <Github className="h-5 w-5" /> */}
+                <FaGithub  className="h-5 w-5" />
               </span>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">GitHub</p>

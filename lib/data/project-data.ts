@@ -1,16 +1,19 @@
 export const profile = {
   name: "Kelechi Okpani",
-  role: "Frontend Engineer",
+  role: "Design Engineer",
   location: "Abuja, Nigeria",
   email: "kelechiokpani.ko@gmail.com",
   github: "https://github.com/kelechiokpani",
   linkedin: "https://linkedin.com/in/kelechiokpani",
-  cv: "/kelechi-okpani-cv.pdf",
+  cv: "/Kelechi_Okpani_Resume.pdf",
+
   headline:
-    "Frontend Engineer building scalable web applications with React & Next.js",
+    "Design Engineer crafting intuitive digital experiences with React, Next.js & TypeScript",
+
   subheadline:
-    "5+ years shipping production interfaces for fintech, SaaS and high-traffic platforms. Open to relocation across Germany, Ireland and Finland.",
-  targets: ["Germany", "Ireland", "Finland", "uk", "eu"],
+    "5+ years designing and building production-ready interfaces, design systems, and scalable web applications for fintech and SaaS products. Bridging the gap between design and engineering to create fast, accessible, and user-centered experiences. Open to relocation across Europe.",
+
+  targets: ["Germany", "Ireland", "Finland", "United Kingdom", "European Union"],
 };
 
 export const skills = {

@@ -79,7 +79,7 @@ import { ArrowRight, Download, Mail, MapPin, Sparkles } from "lucide-react";
 const trust = [
   "5+ years experience",
   "Remote-first",
-  "Fintech & SaaS production",
+  // "Fintech & SaaS production",
   "Available immediately",
 ];
 
