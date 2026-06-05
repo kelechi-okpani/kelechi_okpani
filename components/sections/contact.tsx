@@ -53,18 +53,7 @@ export function ContactSection() {
               </div>
             </a> 
             
-            <a
-              href={`mailto:${profile.email}`}
-              className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-elevated"
-            >
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                <Mail className="h-5 w-5" />
-              </span>
-              <div>
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">Email</p>
-                <p className="text-sm font-medium">https://github.com/Kelechiokpani</p>
-              </div>
-            </a>
+        
             <a
               href={profile.linkedin}
               target="_blank"
@@ -77,6 +66,21 @@ export function ContactSection() {
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">LinkedIn</p>
                 <p className="text-sm font-medium">https://www.linkedin.com/in/kelechi-okpani/</p>
+              </div>
+            </a>
+
+              <a
+              href={profile.github}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-elevated"
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                {/* <Linkedin className="h-5 w-5" /> */}
+              </span>
+              <div>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">Github</p>
+                <p className="text-sm font-medium">https://github.com/Kelechiokpani/</p>
               </div>
             </a>
             <a

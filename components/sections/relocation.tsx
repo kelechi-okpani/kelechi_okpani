@@ -3,21 +3,22 @@ import { CheckCircle2, Plane } from "lucide-react";
 const points = [
 
    {
-    title: "Visa-Sponsorship Ready",
-    body: "I am fully prepared and willing to relocate immediately. I am highly eligible for express tech visa pathways, including the EU Blue Card, Germany IT Specialist Visa, Ireland Critical Skills Employment Permit, and the Finland Specialist Permit, as well as the UK Global Talent",
+    title: "Relocation Ready",
+    body: "Valid international passport and prepared to relocate when required for the role.",
   },
   {
-    title: "Available immediately",
-    body: "Can start within 1- 2 weeks of offer. No notice-period blockers.",
+    title: "Availability",
+    body: "Available to begin within a short transition period.",
   },
   {
-    title: "Open to onsite",
-    body: "Willing to relocate immediately for the right team. Hybrid or onsite both work.",
+    title: "Flexible Work Environment",
+    body: "Comfortable working remotely, hybrid, or onsite depending on team needs.",
   },
   {
-    title: "Remote-fluent",
-    body: "5+ years working remotely with distributed teams across multiple time zones.",
-  },
+    title: "Remote Collaboration",
+    body: "Experienced working with distributed teams and digital collaboration tools.",
+  }, 
+  
 ];
 
 const countries = [
@@ -36,12 +37,11 @@ export function RelocationSection() {
               Relocation
             </p>
             <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-              Open to relocation opportunities
+             Open to Global Opportunities
             </h2>
             <p className="mt-4 text-muted-foreground">
-              I'm based in Nigeria and actively seeking a frontend role with relocation
-              sponsorship. I have a clean background, valid international passport, and
-              I'm prepared to move quickly for the right team.
+              I'm Based in Nigeria and experienced in supporting remote teams across different time zones. 
+              Open to relocation opportunities where required and available to transition quickly for the right role.
             </p>
 
             {/* <div className="mt-8 flex flex-wrap gap-2">
@@ -76,8 +76,7 @@ export function RelocationSection() {
 
             <div className="mt-8 rounded-lg border border-border bg-background p-4 text-sm text-muted-foreground">
               <span className="font-medium text-foreground">Work authorization:</span>{" "}
-              Currently in Nigeria as a remote contributor. Requires standard
-              employer-sponsored work visa for EU relocation.
+             Based in Nigeria and open to employer-sponsored relocation opportunities where applicable.
             </div>
           </div>
         </div>
