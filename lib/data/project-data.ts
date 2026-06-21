@@ -7,21 +7,29 @@ export const profile = {
   linkedin: "https://linkedin.com/in/kelechiokpani",
   cv: "/Kelechi_Okpani_Resume.pdf",
 
-  headline:
-    "Design Engineer crafting intuitive digital experiences with React, Next.js & TypeScript",
+headline:
+    "Full Stack MERN Developer building scalable, user-centric web applications",
 
   subheadline:
-    "5+ years designing and building production-ready interfaces, design systems, and scalable web applications for fintech and SaaS products. Bridging the gap between design and engineering to create fast, accessible, and user-centered experiences. Open to relocation across Europe.",
+    "5+ years of experience designing and developing robust production-ready applications across the full MERN stack. Specialized in crafting high-performance frontends, secure RESTful/GraphQL APIs, and optimized database architectures for fintech and SaaS products. Open to relocation across Europe.",
 
   targets: ["Germany", "Ireland", "Finland", "United Kingdom", "European Union"],
 };
 
+// export const skills = {
+//   Core: ["React", "Next.js", "TypeScript", "JavaScript"],
+//   Frontend: ["Tailwind CSS", "Zustand", "Redux Toolkit", "Framer Motion", "shadcn/ui"],
+//   Backend: ["Node.js", "Express", "REST APIs", "GraphQL"],
+//   Tooling: ["GitHub Actions", "CI/CD", "Vercel", "Jest", "Playwright", "Figma"],
+// };
+
 export const skills = {
-  Core: ["React", "Next.js", "TypeScript", "JavaScript"],
-  Frontend: ["Tailwind CSS", "Zustand", "Redux Toolkit", "Framer Motion", "shadcn/ui"],
-  Backend: ["Node.js", "Express", "REST APIs", "GraphQL"],
-  Tooling: ["GitHub Actions", "CI/CD", "Vercel", "Jest", "Playwright", "Figma"],
+  Core: ["MongoDB", "Express.js", "React", "Node.js"],
+  Frontend: ["Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Redux Toolkit", "Zustand"],
+  Backend: ["REST APIs", "GraphQL", "Mongoose", "JWT/OAuth", "SQL (Bonus)"],
+  Tooling: ["GitHub Actions", "CI/CD", "Docker", "Vercel", "Jest", "Playwright"],
 };
+
 
 export type Project = {
   name: string;
@@ -63,7 +71,38 @@ export const projects: Project[] = [
     ],
     category: "Healthtech",
   },
+
   {
+    name: "Dominion City Abuja",
+    url: "https://dominioncityabuja.com/",
+    problem:
+      "Large congregation required a highly scalable, content-heavy web application with low-latency live streaming integration and seamless event registration workflows.",
+    role: "Full Stack Developer",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS", "Node.js", "Webhooks"],
+    impact: [
+      "Engineered a high-availability live streaming pipeline handling 12k+ peak concurrent viewers with zero downtime.",
+      "Architected a headless CMS schema and webhook system, enabling non-technical editors to publish real-time content updates in under 2 minutes.",
+      "Optimized server-side rendering (SSR) and data caching to achieve a 98 Lighthouse Performance and 100 Accessibility score on mobile.",
+    ],
+    category: "Full Stack / Content / Streaming",
+  },
+
+  {
+    name: "Colycia Couture",
+    url: "https://colyciacouture.com/",
+    problem:
+      "Luxury fashion brand needed a high-performance e-commerce platform with a refined storefront, secure transaction processing, and synchronized inventory management.",
+    role: "Full Stack Developer",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "Stripe"],
+    impact: [
+      "Architected end-to-end secure Stripe payment infrastructure with 3D Secure (3DS) and webhook handlers, increasing checkout conversion by 22%.",
+      "Designed a robust client-server cart state synchronization system with optimistic UI updates and persistent database fallback.",
+      "Engineered an image-CDN driven product catalog pipeline, optimizing server response times and achieving an average LCP of 1.1s.",
+    ],
+    category: "Full Stack / E-commerce",
+  },
+
+    {
     name: "Cinstance",
     url: "https://cinstance.com",
     problem:
@@ -77,20 +116,21 @@ export const projects: Project[] = [
     ],
     category: "DevOps / Cloud",
   },
-  {
-    name: "Dominion City Abuja",
-    url: "https://dominioncityabuja.com/",
-    problem:
-      "Large congregation needed a fast, content-heavy site with live streaming and event registration.",
-    role: "Frontend Engineer",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS"],
-    impact: [
-      "Scored 98 Lighthouse Performance, 100 Accessibility on mobile",
-      "Integrated headless CMS so non-technical editors publish in under 2 minutes",
-      "Handled 12k+ peak concurrent viewers during live streams with zero downtime",
-    ],
-    category: "Content / Streaming",
-  },
+  
+  // {
+  //   name: "Dominion City Abuja",
+  //   url: "https://dominioncityabuja.com/",
+  //   problem:
+  //     "Large congregation needed a fast, content-heavy site with live streaming and event registration.",
+  //   role: "Frontend Engineer",
+  //   stack: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS"],
+  //   impact: [
+  //     "Scored 98 Lighthouse Performance, 100 Accessibility on mobile",
+  //     "Integrated headless CMS so non-technical editors publish in under 2 minutes",
+  //     "Handled 12k+ peak concurrent viewers during live streams with zero downtime",
+  //   ],
+  //   category: "Content / Streaming",
+  // },
   {
     name: "Vantapp",
     url: "https://vantapp.com/",
@@ -119,20 +159,20 @@ export const projects: Project[] = [
     ],
     category: "Agency / Marketing",
   },
-  {
-    name: "Colycia Couture",
-    url: "https://colyciacouture.com/",
-    problem:
-      "Luxury fashion brand needed a refined storefront with smooth product browsing and checkout.",
-    role: "Frontend Engineer",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    impact: [
-      "Built product gallery with image-CDN driven responsive loading (avg LCP 1.1s)",
-      "Integrated Stripe checkout with 3DS, raising checkout completion 22%",
-      "Implemented client-side cart state with optimistic updates and persistence",
-    ],
-    category: "E-commerce",
-  },
+  // {
+  //   name: "Colycia Couture",
+  //   url: "https://colyciacouture.com/",
+  //   problem:
+  //     "Luxury fashion brand needed a refined storefront with smooth product browsing and checkout.",
+  //   role: "Frontend Engineer",
+  //   stack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+  //   impact: [
+  //     "Built product gallery with image-CDN driven responsive loading (avg LCP 1.1s)",
+  //     "Integrated Stripe checkout with 3DS, raising checkout completion 22%",
+  //     "Implemented client-side cart state with optimistic updates and persistence",
+  //   ],
+  //   category: "E-commerce",
+  // },
   {
     name: "HX Africa",
     url: "https://hxafrica.com/",
