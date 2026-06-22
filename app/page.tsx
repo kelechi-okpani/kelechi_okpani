@@ -21,7 +21,7 @@ export default function Page() {
        <ProjectsSection />
 
 
-      <RelocationSection />
+      {/* <RelocationSection /> */}
 
       <ContactSection />
       
