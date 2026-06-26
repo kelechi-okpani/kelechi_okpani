@@ -24,10 +24,55 @@ headline:
 // };
 
 export const skills = {
-  Core: ["MongoDB", "Express.js", "React", "Node.js"],
-  Frontend: ["Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Redux Toolkit", "Zustand"],
-  Backend: ["REST APIs", "GraphQL", "Mongoose", "JWT/OAuth", "SQL (Bonus)"],
-  Tooling: ["GitHub Actions", "CI/CD", "Docker", "Vercel", "Jest", "Playwright"],
+  core: [
+    'React',
+    'Next.js',
+    'TypeScript',
+    'JavaScript (ES6+)',
+    'Vue.js',
+    'Angular.js',
+  ],
+
+  frontend: [
+    'HTML5',
+    'CSS3',
+    'Tailwind CSS',
+    'CSS Grid',
+    'Flexbox',
+    'Responsive Design',
+    'Redux Toolkit',
+    'React Query',
+    'Zustand',
+    'Context API',
+  ],
+
+  backend: [
+    'Node.js',
+    'Express',
+    'REST APIs',
+    'GraphQL',
+    'Authentication',
+    'PostgreSQL',
+    'MongoDB',
+  ],
+
+  testing: [
+    'Jest',
+    'React Testing Library',
+  ],
+
+  tools: [
+    'Git',
+    'GitHub Actions',
+    'npm',
+    'Postman',
+    'Figma',
+    'Vercel',
+    'CI/CD',
+    'Performance Optimization',
+    'Core Web Vitals',
+    'Agile',
+  ],
 };
 
 

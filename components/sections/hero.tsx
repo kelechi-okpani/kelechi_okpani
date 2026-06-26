@@ -100,7 +100,7 @@ export function HeroSection() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
               </span>
-              Open to relocation 
+              Open to Remote Roles 
             </div>
 
             <h1 className="font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-4xl lg:text-6xl">
