@@ -88,20 +88,28 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    name: "Jamasoft (Jama Concept)",
-    url: "https://www.jamaconcept.com/",
-    problem:
-      "Marketing site for a software studio needed to convert enterprise leads with credibility and clarity.",
-    role: "Lead Frontend Engineer",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    impact: [
-      "Cut LCP from 4.2s to 1.3s with route-level code splitting and image optimization",
-      "Implemented modular section system that lets marketing ship pages 3× faster",
-      "Lifted contact form conversion 38% with redesigned CTA flow",
-    ],
-    category: "SaaS Marketing",
-  },
+ {
+  name: "Jamasoft (Jama Concept)",
+  url: "https://www.jamaconcept.com/",
+  problem:
+    "Software development company required a modern, scalable platform to showcase its services, strengthen brand credibility, and generate enterprise leads.",
+  role: "Lead Full Stack Engineer",
+  stack: [
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "REST APIs",
+  ],
+  impact: [
+    "Designed and developed a scalable full-stack web application with a responsive, high-performance user interface.",
+    "Built and integrated backend APIs to support dynamic content and contact form submissions.",
+    "Optimized application performance through code splitting, image optimization, and modern frontend best practices.",
+  ],
+  category: "SaaS Marketing",
+},
   {
     name: "Theragist",
     url: "https://www.theragist.com/",
@@ -246,54 +254,86 @@ export const projects: Project[] = [
     ],
     category: "EdTech SaaS",
   },
-  {
-    name: "Truemark ISO",
-    url: "https://truemark-iso.vercel.app/",
-    problem:
-      "ISO certification provider needed a credibility-driven site to convert enterprise inquiries.",
-    role: "Frontend Engineer",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    impact: [
-      "Shipped fully responsive marketing site in under 2 weeks",
-      "Built typed content layer making 40+ certification pages trivial to maintain",
-      "Lifted qualified lead submissions 60% with restructured CTAs",
-    ],
-    category: "B2B Marketing",
-  },
+{
+  name: "Truemark ISO",
+  url: "https://truemark-iso.vercel.app/",
+  problem:
+    "ISO certification provider needed a credibility-driven platform to increase trust and convert enterprise inquiries.",
+  role: "Full Stack Engineer",
+  stack: [
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+  ],
+  impact: [
+    "Built and deployed a responsive full-stack web application.",
+    "Developed scalable frontend components and backend services for maintainable content management.",
+    "Improved lead generation by 60% through optimized user journeys and strategically placed CTAs.",
+  ],
+  category: "B2B Marketing",
+},
 ];
 
 export const experience = [
   {
-    company: "Vantapp",
-    role: "Senior Frontend Engineer",
-    period: "2023 — Present",
-    stack: ["Next.js", "TypeScript", "Redux Toolkit", "REST APIs"],
+    company: "Jamasoft Concepts Ltd",
+    role: "Full Stack Engineer",
+    period: "Jun 2023 — Jan 2026",
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "REST APIs",
+      "Express.js",
+      "GraphQL",
+      "Tailwind CSS",
+    ],
     achievements: [
-      "Lead frontend for card-issuing fintech serving 50k+ active users",
-      "Integrated 4 payment processors behind a unified typed API client",
-      "Cut onboarding drop-off 27% and improved dashboard TTI by 48%",
+      "Developed and maintained enterprise fintech applications using React, Next.js, TypeScript, and Node.js",
+      "Built responsive, reusable user interfaces and integrated REST & GraphQL APIs with secure authentication and payment workflows",
+      "Collaborated with product managers, UX designers, backend engineers, and stakeholders to deliver business-critical features in Agile environments",
     ],
   },
   {
-    company: "Cloudnotte",
-    role: "Senior Frontend Engineer",
-    period: "2021 — 2023",
-    stack: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+    company: "Channel Info Tech (BPOSEATS)",
+    role: "UX / Frontend Engineer",
+    period: "Jan 2025 — Sep 2025",
+    stack: [
+      "Vue.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST APIs",
+      "Figma",
+      "Jest",
+    ],
     achievements: [
-      "Architected multi-role SaaS dashboard used by 200+ schools and 80k+ students",
-      "Built reusable component system that halved feature delivery time",
-      "Owned performance budget — improved Time-to-Interactive by 60%",
+      "Converted complex Figma designs into responsive, production-ready web applications",
+      "Built reusable frontend components and design patterns to improve UI consistency and maintainability",
+      "Integrated backend APIs and enhanced enterprise dashboard experiences while collaborating closely with UX teams",
     ],
   },
   {
-    company: "Freelance / Agency Work",
-    role: "Frontend Engineer",
-    period: "2019 — 2021",
-    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    company: "Deep Technology Ltd",
+    role: "Frontend Developer",
+    period: "Jun 2020 — Dec 2022",
+    stack: [
+      "React",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "REST APIs",
+      "Apollo Client",
+      "Jest",
+    ],
     achievements: [
-      "Delivered 10+ production sites across fintech, healthtech and e-commerce",
-      "Maintained 95+ Lighthouse scores across all shipped projects",
-      "Integrated Stripe, Paystack and Flutterwave across multiple storefronts",
+      "Developed responsive customer-facing web applications using React and JavaScript",
+      "Built reusable UI components and integrated REST APIs to deliver scalable frontend solutions",
+      "Improved application quality through testing, debugging, and collaboration within Agile development teams",
     ],
   },
 ];
