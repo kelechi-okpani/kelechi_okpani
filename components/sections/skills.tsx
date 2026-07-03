@@ -20,7 +20,6 @@ export function SkillsSection() {
             high-traffic marketing sites.
           </p>
         </div>
-
      <div className="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-12">
   {entries.map(([group, items], index) => (
     <div
@@ -34,7 +33,6 @@ export function SkillsSection() {
       <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-muted-foreground">
         {group}
       </h3>
-
       <div className="mt-4 flex flex-wrap gap-2">
         {items.map((skill) => (
           <span
