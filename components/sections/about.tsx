@@ -32,12 +32,12 @@ export function AboutSection() {
           <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
              Designing experiences. Engineering products.
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            I'm Kelechi — a Design Engineer with 5+ years of experience transforming
-            ideas into intuitive, production-ready digital experiences. I bridge the gap
-            between design and engineering, crafting scalable interfaces, design systems,
-            and high-performance products for fintech and SaaS companies.
-          </p>
+      <p className="mt-4 text-muted-foreground">
+        I'm Kelechi — a Full-Stack Software Engineer with 4+ years of experience transforming 
+        complex ideas into intuitive, production-ready digital products. I specialize in bridging 
+        the gap between robust backend architectures and high-performance frontend interfaces, 
+        crafting scalable design systems and cloud-native applications for fintech, SaaS, and B2B platforms.
+      </p>
         </div>
 
         <div className="mt-14 grid gap-4 md:grid-cols-3">

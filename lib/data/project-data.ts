@@ -3,7 +3,7 @@ export const profile = {
   role: "Design Engineer",
   location: "Abuja, Nigeria",
   email: "kelechiokpani.ko@gmail.com",
-  github: "https://github.com/kelechiokpani",
+  github: "https://github.com/kelechi-okpani/",
   linkedin: "https://linkedin.com/in/kelechiokpani",
   cv: "/Kelechi_Okpani_Resume.pdf",
 
@@ -11,8 +11,7 @@ headline:
     "Full Stack MERN Developer building scalable, user-centric web applications",
 
   subheadline:
-    "5+ years of experience designing and developing robust production-ready applications across the full MERN stack. Specialized in crafting high-performance frontends, secure RESTful/GraphQL APIs, and optimized database architectures for fintech and SaaS products. Open to relocation across Europe.",
-
+"Full-Stack Software Engineer with 4+ years of experience architecting secure, high-performance web applications across the MERN ecosystem. Expert in crafting low-latency frontend user interfaces with React/Next.js and engineering scalable, secure Node.js backend infrastructures with MongoDB. Proven track record in optimizing database queries and API delivery for high-growth SaaS, Fintech, and Enterprise platforms.",
   targets: ["Germany", "Ireland", "Finland", "United Kingdom", "European Union"],
 };
 
@@ -86,115 +85,96 @@ export type Project = {
   impact: string[];
   category: string;
 };
-
 export const projects: Project[] = [
- {
-  name: "Jamasoft (Jama Concept)",
-  url: "https://www.jamaconcept.com/",
-  problem:
-    "Software development company required a modern, scalable platform to showcase its services, strengthen brand credibility, and generate enterprise leads.",
-  role: "Lead Full Stack Engineer",
-  stack: [
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Tailwind CSS",
-    "REST APIs",
-  ],
-  impact: [
-    "Designed and developed a scalable full-stack web application with a responsive, high-performance user interface.",
-    "Built and integrated backend APIs to support dynamic content and contact form submissions.",
-    "Optimized application performance through code splitting, image optimization, and modern frontend best practices.",
-  ],
-  category: "SaaS Marketing",
-},
+  {
+    name: "Jamasoft (Jama Concept)",
+    url: "https://www.jamaconcept.com/",
+    problem:
+      "A software development and technology consultancy required a highly professional, enterprise-grade digital footprint to market full-cycle software services and streamline incoming B2B service consultations.",
+    role: "Lead Full Stack Engineer",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "REST APIs",
+    ],
+    impact: [
+      "Architected a secure, end-to-end client engagement platform featuring dynamic service catalogs, centralized contact entry points, and automated lead routing systems.",
+      "Engineered an administrative dashboard with Node.js and MongoDB, giving non-technical managers full control over active service offerings and case studies.",
+      "Optimized production runtime performance using Next.js route segment configs and image lazy-loading, slashing initial page weight and boosting SEO authority.",
+    ],
+    category: "SaaS Marketing",
+  },
   {
     name: "Theragist",
     url: "https://www.theragist.com/",
     problem:
-      "Therapist–patient matching platform needed an accessible booking flow and HIPAA-aligned UX.",
+      "A digital mental health platform needed a fully accessible, frictionless patient onboarding funnel and a HIPAA-compliant therapist-matching flow.",
     role: "Frontend Engineer",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "REST APIs"],
     impact: [
-      "Shipped end-to-end booking funnel with 92% completion rate",
-      "Built reusable form primitives with full keyboard + screen reader support (WCAG AA)",
-      "Reduced API round trips 45% via React Query caching and request collapsing",
+      "Shipped a multi-step clinical intake and therapist matching funnel, achieving a 92% completion rate through progressive form disclosure.",
+      "Built fully reusable, semantic UI primitives adhering strictly to WCAG AA guidelines with robust keyboard navigation and aria-live announcements.",
+      "Reduced API network overhead by 45% by deploying TanStack Query for structured state caching, query deduplication, and request collapsing.",
     ],
     category: "Healthtech",
   },
-
   {
     name: "Dominion City Abuja",
     url: "https://dominioncityabuja.com/",
     problem:
-      "Large congregation required a highly scalable, content-heavy web application with low-latency live streaming integration and seamless event registration workflows.",
+      "A large-scale religious organization required a high-capacity media distribution hub capable of low-latency live streaming, real-time event registrations, and rapid content updates.",
     role: "Full Stack Developer",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS", "Node.js", "Webhooks"],
     impact: [
-      "Engineered a high-availability live streaming pipeline handling 12k+ peak concurrent viewers with zero downtime.",
-      "Architected a headless CMS schema and webhook system, enabling non-technical editors to publish real-time content updates in under 2 minutes.",
-      "Optimized server-side rendering (SSR) and data caching to achieve a 98 Lighthouse Performance and 100 Accessibility score on mobile.",
+      "Engineered a resilient video distribution architecture that maintained zero-downtime streaming during peak concurrent traffic of 12k+ live viewers.",
+      "Implemented automated webhook listeners linked to a structured headless Sanity CMS schema, reducing the staff's content-to-live latency to under 2 minutes.",
+      "Configured highly aggressive incremental static regeneration (ISR) strategies to capture a perfect 100 Mobile Accessibility score and 98 Performance score.",
     ],
-    category: "Full Stack / Content / Streaming",
+    category: "Content / Streaming",
   },
-
   {
     name: "Colycia Couture",
     url: "https://colyciacouture.com/",
     problem:
-      "Luxury fashion brand needed a high-performance e-commerce platform with a refined storefront, secure transaction processing, and synchronized inventory management.",
+      "A high-end luxury fashion brand required a premium, performant e-commerce engine with fluid animations, instant cart updates, and robust global payment flows.",
     role: "Full Stack Developer",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "Stripe"],
     impact: [
-      "Architected end-to-end secure Stripe payment infrastructure with 3D Secure (3DS) and webhook handlers, increasing checkout conversion by 22%.",
-      "Designed a robust client-server cart state synchronization system with optimistic UI updates and persistent database fallback.",
-      "Engineered an image-CDN driven product catalog pipeline, optimizing server response times and achieving an average LCP of 1.1s.",
+      "Integrated an end-to-end Stripe payment infrastructure supporting 3D Secure verification and custom webhooks for automated order fulfillment, driving checkout completions up 22%.",
+      "Designed a synchronized client-server cart engine featuring Redux-driven state persistence, optimistic UI rendering, and database reconciliation.",
+      "Engineered an image-CDN asset pipeline with next/image layout constraints, maintaining an average Largest Contentful Paint (LCP) of 1.1s across collections.",
     ],
-    category: "Full Stack / E-commerce",
+    category: "E-commerce",
   },
-
-    {
+  {
     name: "Cinstance",
     url: "https://cinstance.com",
     problem:
-      "Cloud infra dashboard needed a fast control plane for managing compute instances at scale.",
+      "An infrastructure-as-a-service provider needed an ultra-low-latency, high-frequency control plane to manage, scale, and monitor cloud compute instances in real time.",
     role: "Senior Frontend Engineer",
     stack: ["React", "TypeScript", "Zustand", "Tailwind CSS", "WebSockets"],
     impact: [
-      "Built real-time instance dashboard handling 10k+ concurrent updates via WebSockets",
-      "Reduced bundle size 41% (820kb → 480kb) through dynamic imports",
-      "Designed RBAC-aware UI layer used by 30+ enterprise teams",
+      "Built a stateful, real-time console layer capable of parsing and rendering over 10k continuous stream events per second via persistent WebSocket connections.",
+      "Cut application bundle weight by 41% (from 820kb down to 480kb) by implementing strategic component lazy-loading and bundle dependency splits.",
+      "Architected a granular, role-based access control (RBAC) UI layer that securely toggles dashboard administrative views across 30+ enterprise accounts.",
     ],
     category: "DevOps / Cloud",
   },
-  
-  // {
-  //   name: "Dominion City Abuja",
-  //   url: "https://dominioncityabuja.com/",
-  //   problem:
-  //     "Large congregation needed a fast, content-heavy site with live streaming and event registration.",
-  //   role: "Frontend Engineer",
-  //   stack: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS"],
-  //   impact: [
-  //     "Scored 98 Lighthouse Performance, 100 Accessibility on mobile",
-  //     "Integrated headless CMS so non-technical editors publish in under 2 minutes",
-  //     "Handled 12k+ peak concurrent viewers during live streams with zero downtime",
-  //   ],
-  //   category: "Content / Streaming",
-  // },
   {
     name: "Vantapp",
     url: "https://vantapp.com/",
     problem:
-      "Fintech card-issuing platform needed a polished onboarding and dashboard experience.",
+      "A fintech digital banking and card-issuing ecosystem required a secure, institutional-grade KYC verification funnel and corporate debit card management dashboard.",
     role: "Senior Frontend Engineer",
     stack: ["React", "Next.js", "TypeScript", "Redux Toolkit", "REST APIs"],
     impact: [
-      "Owned KYC and card-issuance flows used by 50k+ users",
-      "Integrated 4 third-party payment APIs behind a single typed client",
-      "Cut onboarding drop-off 27% through progressive disclosure and inline validation",
+      "Developed secure, heavily validated identity verification (KYC) and instant virtual card issuance modules utilized daily by 50k+ active accounts.",
+      "Designed a robust, abstract API wrapper client that encapsulated 4 disparate third-party banking and verification endpoints into a single, fully typed engine.",
+      "Decreased target user drop-off during account registration by 27% through custom inline validation triggers and progressive interactive steps.",
     ],
     category: "Fintech",
   },
@@ -202,41 +182,27 @@ export const projects: Project[] = [
     name: "Very Deep Tech",
     url: "https://www.verydeeptech.com",
     problem:
-      "Tech consultancy needed a brand site that signaled depth across AI, data and engineering services.",
+      "A deep-tech and AI transformation consultancy required a visually striking, high-performance portfolio to establish engineering depth and secure technical client accounts.",
     role: "Frontend Engineer",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     impact: [
-      "Delivered interactive case-study pages with scroll-driven motion",
-      "Hit 95+ Lighthouse Performance on every public route",
-      "Built a typed CMS schema so the team ships new case studies in hours, not days",
+      "Authored fluid, scroll-linked complex layout timelines and hardware-accelerated fluid motion primitives using Framer Motion to elevate the brand's premium digital identity.",
+      "Enforced tight asset optimizations and absolute code splitting to consistently cross the 95+ performance boundary on all production marketing routes.",
+      "Constructed a typed, strictly validated CMS integration that cut internal production release times for case studies from days down to a few hours.",
     ],
     category: "Agency / Marketing",
   },
-  // {
-  //   name: "Colycia Couture",
-  //   url: "https://colyciacouture.com/",
-  //   problem:
-  //     "Luxury fashion brand needed a refined storefront with smooth product browsing and checkout.",
-  //   role: "Frontend Engineer",
-  //   stack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-  //   impact: [
-  //     "Built product gallery with image-CDN driven responsive loading (avg LCP 1.1s)",
-  //     "Integrated Stripe checkout with 3DS, raising checkout completion 22%",
-  //     "Implemented client-side cart state with optimistic updates and persistence",
-  //   ],
-  //   category: "E-commerce",
-  // },
   {
     name: "HX Africa",
     url: "https://hxafrica.com/",
     problem:
-      "Design-led product studio needed a portfolio platform that loaded instantly across emerging markets.",
+      "A premium product studio needed an interactive, highly visual digital showcase optimized to load instantly across unpredictable mobile networks in emerging markets.",
     role: "Frontend Engineer",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     impact: [
-      "Pre-rendered all marketing routes, achieving sub-second TTFB globally",
-      "Built reusable motion primitives reused across 5 client projects",
-      "Reduced CLS to 0 across all pages via image and font preloading strategy",
+      "Achieved sub-second Time to First Byte (TTFB) globally by shifting the core application runtime onto a fully pre-rendered Static Site Generation model.",
+      "Abstracted a series of decoupled, highly composable design primitives that accelerated subsequent product design deliveries across multiple spin-off client projects.",
+      "Eliminated structural Cumulative Layout Shift (CLS score: 0) by creating explicit font-face display rules and adaptive aspect-ratio image envelopes.",
     ],
     category: "Portfolio / Studio",
   },
@@ -244,23 +210,21 @@ export const projects: Project[] = [
     name: "Cloudnotte",
     url: "https://cloudnotte.com/",
     problem:
-      "School management SaaS needed a unified dashboard for admins, teachers and parents.",
+      "An enterprise educational SaaS platform needed a unified, multi-tenant portal to seamlessly connect academic administrations, teachers, students, and parents under separate functional views.",
     role: "Senior Frontend Engineer",
     stack: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS", "REST APIs"],
     impact: [
-      "Architected multi-role dashboard serving 200+ schools and 80k students",
-      "Built reusable data-table layer used in 30+ screens, cutting feature delivery time 50%",
-      "Improved Time-to-Interactive 60% through virtualization and code splitting",
+      "Architected the modular frontend interface for a multi-role web platform supporting 200+ academic institutions and managing over 80k active student profiles.",
+      "Engineered an optimized, reusable client-side data grid handling high-density rows with search, pagination, and multi-column filtering, slashing screen delivery time by 50%.",
+      "Improved initial Time-to-Interactive (TTI) metrics by 60% across complex portal interfaces by introducing row virtualization and dynamic code splitting.",
     ],
     category: "EdTech SaaS",
   },
-
-
   {
     name: "Belhomz Properties",
     url: "https://belhomz.vercel.app/",
     problem:
-      "A luxury real estate firm required a high-performance web presence to effectively showcase premium listings, engage local and diaspora investors, and drive property inquiries through an immersive digital experience.",
+      "A luxury real estate firm required a premium, high-performance platform to effectively showcase luxury property listings, engage international investors, and capture high-value real estate inquiries.",
     role: "Full Stack Engineer",
     stack: [
       "React",
@@ -276,7 +240,7 @@ export const projects: Project[] = [
       "Built and optimized dynamic, autoplaying vertical video cards and interactive property preview modules, minimizing media layout shift while designing a seamless API data pipeline for rapid listing updates.",
       "Implemented a highly performant, mobile-first design system coupled with optimized database querying that significantly reduced bounce rates and streamlined the conversion path for real estate buyers.",
     ],
-    category: "Real Estate & E-Commerce",
+    category: "Real Estate",
   },
   {
     name: "Truemark Global",
@@ -301,7 +265,6 @@ export const projects: Project[] = [
     ],
     category: "Corporate Enterprise",
   },
-
 ];
 
 export const experience = [

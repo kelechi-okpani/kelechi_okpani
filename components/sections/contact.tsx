@@ -82,7 +82,7 @@ export function ContactSection() {
               </span>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Github</p>
-                <p className="text-sm font-medium">https://github.com/Kelechiokpani/</p>
+                <p className="text-sm font-medium">https://github.com/Kelechi-okpani/</p>
               </div>
             </a>
             <a
@@ -115,7 +115,7 @@ export function ContactSection() {
                   name="name"
                   required
                   className="mt-1.5 w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
-                  placeholder="Jane Doe"
+                  placeholder="kelechi okpani"
                 />
               </div>
               <div>
@@ -128,7 +128,7 @@ export function ContactSection() {
                   type="email"
                   required
                   className="mt-1.5 w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
-                  placeholder="jane@company.com"
+                  placeholder="kelechiokpani.ko@gmail.com"
                 />
               </div>
             </div>
