@@ -254,27 +254,54 @@ export const projects: Project[] = [
     ],
     category: "EdTech SaaS",
   },
-{
-  name: "Truemark ISO",
-  url: "https://truemark-iso.vercel.app/",
-  problem:
-    "ISO certification provider needed a credibility-driven platform to increase trust and convert enterprise inquiries.",
-  role: "Full Stack Engineer",
-  stack: [
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Tailwind CSS",
-  ],
-  impact: [
-    "Built and deployed a responsive full-stack web application.",
-    "Developed scalable frontend components and backend services for maintainable content management.",
-    "Improved lead generation by 60% through optimized user journeys and strategically placed CTAs.",
-  ],
-  category: "B2B Marketing",
-},
+
+
+  {
+    name: "Belhomz Properties",
+    url: "https://belhomz.vercel.app/",
+    problem:
+      "A luxury real estate firm required a high-performance web presence to effectively showcase premium listings, engage local and diaspora investors, and drive property inquiries through an immersive digital experience.",
+    role: "Full Stack Engineer",
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    impact: [
+      "Engineered the entire end-to-end architecture, delivering the frontend interface layers, responsive multi-tiered navigation components, and robust backend services to manage premium property catalogs.",
+      "Built and optimized dynamic, autoplaying vertical video cards and interactive property preview modules, minimizing media layout shift while designing a seamless API data pipeline for rapid listing updates.",
+      "Implemented a highly performant, mobile-first design system coupled with optimized database querying that significantly reduced bounce rates and streamlined the conversion path for real estate buyers.",
+    ],
+    category: "Real Estate & E-Commerce",
+  },
+  {
+    name: "Truemark Global",
+    url: "https://www.truemarkglobal.com/",
+    problem:
+      "An international ISO certification and compliance training provider needed a high-credibility, enterprise-grade digital platform to scale corporate trust, simplify complex service offerings, and capture high-value global business leads.",
+    role: "Full Stack Engineer",
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Cloudinary",
+    ],
+    impact: [
+      "Architected and deployed a highly responsive, end-to-end web application featuring scalable frontend components and secure corporate lead distribution architectures.",
+      "Re-engineered backend API hooks to handle optimized, unsigned asset uploads directly to Cloudinary storage, integrating strong client-side error boundaries to ensure smooth document submission workflows.",
+      "Boosted B2B lead generation conversion by 60% through optimized user journeys, localized trust indicators, and strategically mapped call-to-action (CTA) triggers.",
+    ],
+    category: "Corporate Enterprise",
+  },
+
 ];
 
 export const experience = [
