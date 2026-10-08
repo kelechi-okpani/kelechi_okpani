@@ -1,78 +1,91 @@
 export const profile = {
   name: "Kelechi Okpani",
-  role: "Design Engineer",
-  location: "Abuja, Nigeria",
+  role: "Software Engineer",
+  location: "Nigeria",
   email: "kelechiokpani.ko@gmail.com",
-  github: "https://github.com/kelechi-okpani/",
+  github: "https://github.com/Kelechi-okpani/",
   linkedin: "https://linkedin.com/in/kelechiokpani",
   cv: "/Kelechi_Okpani_Resume.pdf",
 
 headline:
-    "Full Stack MERN Developer building scalable, user-centric web applications",
+    "Software Engineer building scalable, user-centric web applications",
 
   subheadline:
-"Full-Stack Software Engineer with 4+ years of experience architecting secure, high-performance web applications across the MERN ecosystem. Expert in crafting low-latency frontend user interfaces with React/Next.js and engineering scalable, secure Node.js backend infrastructures with MongoDB. Proven track record in optimizing database queries and API delivery for high-growth SaaS, Fintech, and Enterprise platforms.",
+"Software Engineer with 5+ years of experience building scalable, secure, and high-performance web applications across frontend and backend environments. Strong expertise in JavaScript and TypeScript, with hands-on experience using React.js, Next.js, Vue.js, Node.js, Express.js, NestJS, REST APIs, GraphQL, and modern database technologies including MongoDB, PostgreSQL, and Redis. Experienced in developing production-ready SaaS, fintech, and enterprise applications, with a focus on performance, clean architecture, API integration, authentication, testing, and reliable cloud deployment. Comfortable working across the full software development lifecycle, from building responsive user interfaces to developing backend services, integrating APIs, and deploying applications to cloud platforms.\n",
   targets: ["Germany", "Ireland", "Finland", "United Kingdom", "European Union"],
 };
 
-// export const skills = {
-//   Core: ["React", "Next.js", "TypeScript", "JavaScript"],
-//   Frontend: ["Tailwind CSS", "Zustand", "Redux Toolkit", "Framer Motion", "shadcn/ui"],
-//   Backend: ["Node.js", "Express", "REST APIs", "GraphQL"],
-//   Tooling: ["GitHub Actions", "CI/CD", "Vercel", "Jest", "Playwright", "Figma"],
-// };
 
 export const skills = {
   core: [
-    'React',
-    'Next.js',
-    'TypeScript',
-    'JavaScript (ES6+)',
-    'Vue.js',
-    'Angular.js',
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Vue.js",
   ],
 
   frontend: [
-    'HTML5',
-    'CSS3',
-    'Tailwind CSS',
-    'CSS Grid',
-    'Flexbox',
-    'Responsive Design',
-    'Redux Toolkit',
-    'React Query',
-    'Zustand',
-    'Context API',
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Redux Toolkit",
+    "Responsive Design",
+    "CSS Grid",
+    "Flexbox",
+    "Component Architecture",
+    "State Management",
   ],
 
   backend: [
-    'Node.js',
-    'Express',
-    'REST APIs',
-    'GraphQL',
-    'Authentication',
-    'PostgreSQL',
-    'MongoDB',
+    "Node.js",
+    "Express.js",
+    "NestJS",
+    "REST APIs",
+    "GraphQL",
+    "WebSockets",
+    "Authentication & Authorization",
+  ],
+
+  databases: [
+    "MongoDB",
+    "PostgreSQL",
+    "Redis",
   ],
 
   testing: [
-    'Jest',
-    'React Testing Library',
+    "Jest",
+    "React Testing Library",
+    "Unit Testing",
+    "Integration Testing",
   ],
 
-  tools: [
-    'Git',
-    'GitHub Actions',
-    'npm',
-    'Postman',
-    'Figma',
-    'Vercel',
-    'CI/CD',
-    'Performance Optimization',
-    'Core Web Vitals',
-    'Agile',
+  devops: [
+    "Docker",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "GitHub Actions",
+    "CI/CD",
+    "AWS",
+    "Vercel",
+    "Railway",
+    "Cloudflare",
+    "Cloudinary",
+  ],
+
+  practices: [
+    "Performance Optimization",
+    "Core Web Vitals",
+    "API Integration",
+    "Clean Architecture",
+    "Agile / Scrum",
+    "Code Reviews",
+    "Figma",
+    "Postman",
   ],
 };
+
 
 
 export type Project = {
@@ -267,84 +280,87 @@ export const projects: Project[] = [
   },
 ];
 
+
 export const experience = [
   {
-    company: "Jamasoft Concepts Ltd",
-    role: "Full Stack Engineer",
-    period: "Jun 2023 — Jan 2026",
+    company: "Jamasoft Concepts Limited",
+    role: "Full-Stack Engineer",
+    period: "Feb 2023 — Jun 2026",
+    location: "Hybrid",
     stack: [
       "React",
       "Next.js",
       "TypeScript",
       "Node.js",
-      "REST APIs",
       "Express.js",
+      "REST APIs",
       "GraphQL",
-      "Tailwind CSS",
+      "Redux Toolkit",
+      "Docker",
+      "Git",
+      "CI/CD",
     ],
     achievements: [
-      "Developed and maintained enterprise fintech applications using React, Next.js, TypeScript, and Node.js",
-      "Built responsive, reusable user interfaces and integrated REST & GraphQL APIs with secure authentication and payment workflows",
-      "Collaborated with product managers, UX designers, backend engineers, and stakeholders to deliver business-critical features in Agile environments",
+      "Led end-to-end development of enterprise-grade fintech applications using React, Next.js, TypeScript, and Node.js, owning feature architecture from concept through production.",
+      "Integrated REST and GraphQL APIs for secure application workflows, optimizing data-fetching overhead and improving response times by 30%.",
+      "Implemented authentication, role-based access control, Docker-based development workflows, and automated CI/CD pipelines using Git and GitHub.",
+      "Architected centralized state management with Redux Toolkit to coordinate cross-service user data and reduce synchronization issues.",
+      "Mentored junior engineers, conducted code reviews, and collaborated with the Head of Technology to establish scalable software architecture standards.",
+      "Worked closely with product managers and UX designers to translate business requirements into technical milestones and accelerate feature delivery.",
     ],
   },
+
   {
-    company: "Channel Info Tech (BPOSEATS)",
-    role: "UX / Frontend Engineer",
-    period: "Jan 2025 — Sep 2025",
+    company: "Channel Info Technology (BPOSEATS)",
+    role: "Full-Stack Engineer",
+    period: "Jan 2025 — Jan 2026",
+    location: "Remote",
     stack: [
       "Vue.js",
+      "Node.js",
+      "Express.js",
       "TypeScript",
       "Tailwind CSS",
       "REST APIs",
       "Figma",
       "Jest",
+      "React Testing Library",
     ],
     achievements: [
-      "Converted complex Figma designs into responsive, production-ready web applications",
-      "Built reusable frontend components and design patterns to improve UI consistency and maintainability",
-      "Integrated backend APIs and enhanced enterprise dashboard experiences while collaborating closely with UX teams",
+      "Designed and maintained full-stack web applications by integrating responsive Vue.js interfaces with Node.js and Express.js backend services.",
+      "Translated Figma wireframes and design-system specifications into interactive web modules and reusable component libraries.",
+      "Managed complex multi-step forms and dashboard interaction flows using structured state-management patterns.",
+      "Conducted bundle-size analysis and frontend performance optimization while improving testing standards with Jest and React Testing Library.",
+      "Optimized asset delivery and image pipelines to reduce page weight and improve Largest Contentful Paint (LCP) across heavy client dashboards.",
+      "Collaborated on cross-functional debugging sessions and Agile retrospectives to identify and eliminate recurring production bottlenecks.",
     ],
   },
+
   {
-    company: "Deep Technology Ltd",
+    company: "Deep Technology Limited",
     role: "Frontend Developer",
     period: "Jun 2020 — Dec 2022",
+    location: "Hybrid",
     stack: [
       "React",
       "JavaScript",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
-      "REST APIs",
+      "CSS Grid",
       "Apollo Client",
       "Jest",
+      "React Testing Library",
+      "ESLint",
+      "Prettier",
     ],
     achievements: [
-      "Developed responsive customer-facing web applications using React and JavaScript",
-      "Built reusable UI components and integrated REST APIs to deliver scalable frontend solutions",
-      "Improved application quality through testing, debugging, and collaboration within Agile development teams",
+      "Developed consumer-facing web applications from the ground up using React and modern JavaScript development practices.",
+      "Configured application data layers with Apollo Client to consume backend APIs and manage complex client-side caching states.",
+      "Implemented automated unit testing with Jest and React Testing Library to improve reliability and reduce post-release issues.",
+      "Engineered dynamic UI components using CSS Grid and Tailwind CSS for consistent experiences across mobile, tablet, and desktop devices.",
+      "Established ESLint and Prettier standards to improve code quality, consistency, and maintainability across the engineering team.",
+      "Collaborated in Agile sprint planning, daily stand-ups, system debugging, and client feedback sessions to continuously improve product experiences.",
     ],
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Kelechi shipped our card-issuance flow in half the time we budgeted — clean, accessible, and observably faster than the previous version.",
-    author: "Engineering Manager",
-    role: "Fintech (Vantapp)",
-  },
-  {
-    quote:
-      "One of the most reliable frontend engineers I have worked with. Owns problems end-to-end and ships polished UI without hand-holding.",
-    author: "Product Lead",
-    role: "SaaS (Cloudnotte)",
-  },
-  {
-    quote:
-      "Pixel-perfect implementation, strong opinions on performance, and a great collaborator with design.",
-    author: "Design Director",
-    role: "Studio (HX Africa)",
   },
 ];

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
 
+
 export const metadata: Metadata = {
   title: 'Kelechi Okpani | Frontend Engineer',
   description: 'Kelechi Okpani - Frontend Engineer with 5+ years experience building production SaaS applications. Open to relocation with visa sponsorship.',
