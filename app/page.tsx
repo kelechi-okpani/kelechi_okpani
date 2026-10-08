@@ -20,9 +20,6 @@ export default function Page() {
       <ExperienceSection />
        <ProjectsSection />
 
-
-      {/* <RelocationSection /> */}
-
       <ContactSection />
       
       {/* Footer */}
