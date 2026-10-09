@@ -1,6 +1,7 @@
 
 import { Analytics } from '@vercel/analytics/next'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from 'next/script'
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 import { Navbar } from '@/components/navbar'
@@ -106,7 +107,33 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased bg-background text-foreground">
-        <ThemeProvider
+
+
+      <Script id="axeptio-consent" strategy="beforeInteractive">
+        {`
+    window.axeptioSettings = {
+      clientId: "6ac8689d471532917fe69850",
+      cookiesVersion: "88e50417-5c66-40de-84b8-ad8bcd2afcbf",
+      googleConsentMode: {
+        default: {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500
+        }
+      }
+    };
+  `}
+      </Script>
+
+      <Script
+          id="axeptio-sdk"
+          src="https://static.axept.io/sdk.js"
+          strategy="beforeInteractive"
+      />
+
+      <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
