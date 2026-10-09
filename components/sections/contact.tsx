@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
-import { profile } from "@/lib/data/project-data";
+import { profile } from "@/data/project-data";
 
 export function ContactSection() {
   const [sent, setSent] = useState(false);

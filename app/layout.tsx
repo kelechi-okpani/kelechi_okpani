@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
+import {Navbar} from "@/components/navbar";
 
 
 export const metadata: Metadata = {
@@ -41,8 +42,17 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <Navbar />
           {children}
           {process.env.NODE_ENV === 'production' && <Analytics />}
+          <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center text-sm text-muted-foreground">
+              <p>
+                © {new Date().getFullYear()} Kelechi Okpani.
+              </p>
+            </div>
+          </footer>
+
         </ThemeProvider>
       </body>
     </html>

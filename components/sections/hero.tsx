@@ -8,7 +8,7 @@ import {
   Code2,
 } from "lucide-react";
 
-import { profile } from "@/lib/data/project-data";
+import { profile } from "@/data/project-data";
 
 const trust = [
   "5+ years experience",

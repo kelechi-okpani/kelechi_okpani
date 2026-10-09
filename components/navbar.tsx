@@ -51,7 +51,7 @@ export function Navbar() {
           <div className="flex h-16 items-center justify-between px-4 md:px-5">
             {/* Logo */}
             <a
-                href="#top"
+                href="/"
                 className="group flex items-center gap-2.5"
                 onClick={() => setOpen(false)}
             >
@@ -86,10 +86,18 @@ export function Navbar() {
 
               {/* Hire Me */}
               <a
-                  href="#contact"
+                  href="#hire-me"
                   className="group hidden items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-md md:inline-flex"
               >
                 Hire Me
+                <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+
+              <a
+                  href="/blog"
+                  className="group hidden items-center gap-1.5 rounded-lg border border-border/60 bg-muted/50 px-4 py-2 text-sm font-medium text-foreground shadow-sm backdrop-blur-xl transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/30 hover:bg-primary/10 hover:text-primary hover:shadow-md md:inline-flex"
+              >
+                Blog
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
@@ -132,13 +140,23 @@ export function Navbar() {
                 ))}
 
                 <a
-                    href="#contact"
+                    href="#hire-me"
                     onClick={() => setOpen(false)}
                     className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
                 >
                   Hire Me
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
+
+                <a
+                    href="/blog"
+                    onClick={() => setOpen(false)}
+                    className="mt-2 flex items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/[0.06] px-4 py-3 text-sm font-medium text-foreground shadow-sm backdrop-blur-md transition-all duration-300 hover:border-primary/20 hover:bg-primary/10 hover:text-primary"
+                >
+                  Blog
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+
               </div>
             </div>
           </div>

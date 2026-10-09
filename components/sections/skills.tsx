@@ -11,7 +11,7 @@ import {
     Zap,
 } from "lucide-react";
 
-import { skills } from "@/lib/data/project-data";
+import { skills } from "@/data/project-data";
 
 const categoryConfig: Record<
     string,

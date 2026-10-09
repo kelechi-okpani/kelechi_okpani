@@ -1,4 +1,4 @@
-import { experience } from "@/lib/data/project-data";
+import { experience } from "@/data/project-data";
 import {
   Briefcase,
   CalendarDays,
