@@ -1,6 +1,5 @@
 
 import { Analytics } from '@vercel/analytics/next'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from 'next/script'
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Kelechi Okpani is a Software Engineer with 5+ years of experience building scalable web applications using React, Next.js, TypeScript, and Node.js. Explore projects, technical articles, and experience. Open to international remote opportunities and relocation with visa sponsorship.',
+      'Kelechi Okpani is a Software Engineer with 5+ years of experience building scalable web applications using React, Next.js, TypeScript, and Node.js. Explore projects, technical articles, and experience. Open to international remote opportunities and relocation with visa sponsorship.',
 
   applicationName: 'Kelechi Okpani Portfolio',
   creator: 'Kelechi Okpani',
@@ -67,7 +66,7 @@ export const metadata: Metadata = {
     siteName: 'Kelechi Okpani Portfolio',
     title: 'Kelechi Okpani | Frontend & Full-Stack Engineer',
     description:
-      'Explore the portfolio, projects, and technical writing of Kelechi Okpani, a Software Engineer specializing in React, Next.js, TypeScript, and scalable web applications.',
+        'Explore the portfolio, projects, and technical writing of Kelechi Okpani, a Software Engineer specializing in React, Next.js, TypeScript, and scalable web applications.',
     images: [
       {
         url: '/og-image.png',
@@ -82,7 +81,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kelechi Okpani | Frontend & Full-Stack Engineer',
     description:
-      'Software Engineer specializing in React, Next.js, TypeScript, and scalable web applications. Explore my projects and technical writing.',
+        'Software Engineer specializing in React, Next.js, TypeScript, and scalable web applications. Explore my projects and technical writing.',
     images: ['/og-image.png'],
   },
 
@@ -100,31 +99,30 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+      <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased bg-background text-foreground">
-
-
+      {/* Axeptio consent configuration */}
       <Script id="axeptio-consent" strategy="beforeInteractive">
         {`
-    window.axeptioSettings = {
-      clientId: "6ac8689d471532917fe69850",
-      cookiesVersion: "88e50417-5c66-40de-84b8-ad8bcd2afcbf",
-      googleConsentMode: {
-        default: {
-          analytics_storage: "denied",
-          ad_storage: "denied",
-          ad_user_data: "denied",
-          ad_personalization: "denied",
-          wait_for_update: 500
-        }
-      }
-    };
-  `}
+            window.axeptioSettings = {
+              clientId: "6ac8689d471532917fe69850",
+              cookiesVersion: "88e50417-5c66-40de-84b8-ad8bcd2afcbf",
+              googleConsentMode: {
+                default: {
+                  analytics_storage: "denied",
+                  ad_storage: "denied",
+                  ad_user_data: "denied",
+                  ad_personalization: "denied",
+                  wait_for_update: 500
+                }
+              }
+            };
+          `}
       </Script>
 
       <Script
@@ -133,25 +131,39 @@ export default function RootLayout({
           strategy="beforeInteractive"
       />
 
+      {/* Google tag */}
+      <Script
+          id="google-tag"
+          src="https://www.googletagmanager.com/gtag/js?id=GT-NFRMSDPR"
+          strategy="beforeInteractive"
+      />
+
+      <Script id="google-tag-init" strategy="beforeInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'GT-NFRMSDPR');
+          `}
+      </Script>
+
       <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
-        >
-          <Navbar />
-          {children}
+      >
+        <Navbar />
+        {children}
 
-          {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
 
-          <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center text-sm text-muted-foreground">
-              <p>© {new Date().getFullYear()} Kelechi Okpani.</p>
-            </div>
-          </footer>
-        </ThemeProvider>
-
-        <GoogleAnalytics gaId="G-DEJ8N2RF2M" />
+        <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center text-sm text-muted-foreground">
+            <p>© {new Date().getFullYear()} Kelechi Okpani.</p>
+          </div>
+        </footer>
+      </ThemeProvider>
       </body>
-    </html>
+      </html>
   )
 }
