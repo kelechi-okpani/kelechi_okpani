@@ -106,46 +106,66 @@ export default function RootLayout({
   return (
       <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased bg-background text-foreground">
+
+
       {/* Axeptio consent configuration */}
       <Script id="axeptio-consent" strategy="beforeInteractive">
         {`
-            window.axeptioSettings = {
-              clientId: "6ac8689d471532917fe69850",
-              cookiesVersion: "88e50417-5c66-40de-84b8-ad8bcd2afcbf",
-              googleConsentMode: {
-                default: {
-                  analytics_storage: "denied",
-                  ad_storage: "denied",
-                  ad_user_data: "denied",
-                  ad_personalization: "denied",
-                  wait_for_update: 500
-                }
-              }
-            };
-          `}
+    window.axeptioSettings = {
+      clientId: "6ac8689d471532917fe69850",
+      cookiesVersion: "88e50417-5c66-40de-84b8-ad8bcd2afcbf",
+      googleConsentMode: {
+        default: {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500
+        }
+      }
+    };
+  `}
       </Script>
 
-      <Script
-          id="axeptio-sdk"
-          src="https://static.axept.io/sdk.js"
-          strategy="beforeInteractive"
-      />
+      {/* Google Consent Mode defaults — must run before the Google tag */}
+      <Script id="google-consent-defaults" strategy="beforeInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function() {
+      window.dataLayer.push(arguments);
+    };
 
-      {/* Google tag */}
+    window.gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+  `}
+      </Script>
+
+      {/* Google tag loader */}
       <Script
           id="google-tag"
           src="https://www.googletagmanager.com/gtag/js?id=GT-NFRMSDPR"
           strategy="beforeInteractive"
       />
 
+      {/* Configure Google tag */}
       <Script id="google-tag-init" strategy="beforeInteractive">
         {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'GT-NFRMSDPR');
-          `}
+    window.gtag('js', new Date());
+    window.gtag('config', 'GT-NFRMSDPR');
+  `}
       </Script>
+
+      {/* Axeptio cookie banner */}
+      <Script
+          id="axeptio-sdk"
+          src="https://static.axept.io/sdk.js"
+          strategy="beforeInteractive"
+      />
 
       <ThemeProvider
           attribute="class"
