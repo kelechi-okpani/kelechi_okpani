@@ -105,7 +105,28 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en" suppressHydrationWarning>
+      {/* Google Tag Manager */}
+      <Script id="google-tag-manager" strategy="beforeInteractive">
+        {`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T9QMH3DG');
+      `}
+      </Script>
+
       <body className="font-sans antialiased bg-background text-foreground">
+
+      <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T9QMH3DG"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+            title="Google Tag Manager"
+        />
+      </noscript>
 
 
       {/* Axeptio consent configuration */}
