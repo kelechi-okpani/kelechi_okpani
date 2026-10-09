@@ -123,7 +123,7 @@ export default function RootLayout({
           </footer>
         </ThemeProvider>
 
-        <GoogleAnalytics gaId="G-RJTXGK9C4N" />
+        <GoogleAnalytics gaId="G-DEJ8N2RF2M" />
       </body>
     </html>
   )
