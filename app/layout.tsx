@@ -98,113 +98,83 @@ export const metadata: Metadata = {
   },
 }
 
+
 export default function RootLayout({
-                                     children,
+                                       children,
                                    }: Readonly<{
-  children: React.ReactNode
+    children: React.ReactNode
 }>) {
-  return (
-      <html lang="en" suppressHydrationWarning>
-      {/* Google Tag Manager */}
-      <Script id="google-tag-manager" strategy="beforeInteractive">
-        {`
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-T9QMH3DG');
-      `}
-      </Script>
+    return (
+        <html lang="en" suppressHydrationWarning>
+        <head>
+            {/* Axeptio consent defaults must be configured before GTM */}
+            <Script id="axeptio-consent" strategy="beforeInteractive">
+                {`
+            window.axeptioSettings = {
+              clientId: "6ac8689d471532917fe69850",
+              cookiesVersion: "88e50417-5c66-40de-84b8-ad8bcd2afcbf",
+              googleConsentMode: {
+                default: {
+                  analytics_storage: "denied",
+                  ad_storage: "denied",
+                  ad_user_data: "denied",
+                  ad_personalization: "denied",
+                  wait_for_update: 500
+                }
+              }
+            };
+          `}
+            </Script>
 
-      <body className="font-sans antialiased bg-background text-foreground">
+            {/* Google Tag Manager */}
+            <Script id="google-tag-manager" strategy="beforeInteractive">
+                {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T9QMH3DG');
+          `}
+            </Script>
+        </head>
 
-      <noscript>
-        <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-T9QMH3DG"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-            title="Google Tag Manager"
+        <body className="font-sans antialiased bg-background text-foreground">
+        {/* GTM fallback for browsers with JavaScript disabled */}
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-T9QMH3DG"
+                height="0"
+                width="0"
+                style={{ display: 'none', visibility: 'hidden' }}
+                title="Google Tag Manager"
+            />
+        </noscript>
+
+        {/* Axeptio cookie banner */}
+        <Script
+            id="axeptio-sdk"
+            src="https://static.axept.io/sdk.js"
+            strategy="beforeInteractive"
         />
-      </noscript>
 
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+        >
+            <Navbar />
+            {children}
 
-      {/* Axeptio consent configuration */}
-      <Script id="axeptio-consent" strategy="beforeInteractive">
-        {`
-    window.axeptioSettings = {
-      clientId: "6ac8689d471532917fe69850",
-      cookiesVersion: "88e50417-5c66-40de-84b8-ad8bcd2afcbf",
-      googleConsentMode: {
-        default: {
-          analytics_storage: "denied",
-          ad_storage: "denied",
-          ad_user_data: "denied",
-          ad_personalization: "denied",
-          wait_for_update: 500
-        }
-      }
-    };
-  `}
-      </Script>
+            {process.env.NODE_ENV === 'production' && <Analytics />}
 
-      {/* Google Consent Mode defaults — must run before the Google tag */}
-      <Script id="google-consent-defaults" strategy="beforeInteractive">
-        {`
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function() {
-      window.dataLayer.push(arguments);
-    };
-
-    window.gtag('consent', 'default', {
-      analytics_storage: 'denied',
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-      wait_for_update: 500
-    });
-  `}
-      </Script>
-
-      {/* Google tag loader */}
-      <Script
-          id="google-tag"
-          src="https://www.googletagmanager.com/gtag/js?id=GT-NFRMSDPR"
-          strategy="beforeInteractive"
-      />
-
-      {/* Configure Google tag */}
-      <Script id="google-tag-init" strategy="beforeInteractive">
-        {`
-    window.gtag('js', new Date());
-    window.gtag('config', 'GT-NFRMSDPR');
-  `}
-      </Script>
-
-      {/* Axeptio cookie banner */}
-      <Script
-          id="axeptio-sdk"
-          src="https://static.axept.io/sdk.js"
-          strategy="beforeInteractive"
-      />
-
-      <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-      >
-        <Navbar />
-        {children}
-
-        {process.env.NODE_ENV === 'production' && <Analytics />}
-
-        <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Kelechi Okpani.</p>
-          </div>
-        </footer>
-      </ThemeProvider>
-      </body>
-      </html>
-  )
+            <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-4xl mx-auto text-center text-sm text-muted-foreground">
+                    <p>© {new Date().getFullYear()} Kelechi Okpani.</p>
+                </div>
+            </footer>
+        </ThemeProvider>
+        </body>
+        </html>
+    )
 }
