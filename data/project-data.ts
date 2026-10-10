@@ -383,7 +383,7 @@ export const projects: Project[] = [
     ],
 
     impact: [
-      "Supported 12K+ concurrent live viewers.",
+      "Supported 2K+ concurrent live viewers.",
       "Kept content-to-live latency below two minutes.",
       "Achieved 100 mobile accessibility and 98 performance scores.",
     ],
@@ -396,7 +396,7 @@ export const projects: Project[] = [
           "Combined Next.js, React, GraphQL, WebSockets and optimized media delivery to create a responsive content and streaming experience.",
 
       result:
-          "Delivered a high-performing platform supporting 12K+ concurrent viewers with strong mobile accessibility and performance.",
+          "Delivered a high-performing platform supporting 2K+ concurrent viewers with strong mobile accessibility and performance.",
     },
   },
 
@@ -570,7 +570,7 @@ export const projects: Project[] = [
         metric: "5K+",
         label: "Active Accounts",
         description:
-            "Supported a platform serving more than 50,000 active accounts.",
+            "Supported a platform serving more than 5,000 active accounts.",
       },
       {
         metric: "4",
@@ -787,8 +787,8 @@ export const projects: Project[] = [
     ],
 
     impact: [
-      "Supported 200+ institutions.",
-      "Worked with 80K+ student profiles.",
+      "Supported 20+ institutions.",
+      "Worked with 1K+ student profiles.",
       "Improved Time to Interactive by 60%.",
     ],
 

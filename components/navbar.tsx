@@ -9,7 +9,10 @@ const links = [
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#hire-me", label: "Hire-me" },
   { href: "#contact", label: "Contact" },
+
+  // { href: "/cv-optimizer", label: "CV Optimizer" },
 ];
 
 export function Navbar() {
@@ -86,10 +89,10 @@ export function Navbar() {
 
               {/* Hire Me */}
               <a
-                  href="#hire-me"
+                  href="/cv-optimizer"
                   className="group hidden items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-md md:inline-flex"
               >
-                Hire Me
+                Cv-Optimizer
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
@@ -100,6 +103,9 @@ export function Navbar() {
                 Blog
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
+
+
+
 
               {/* Mobile Menu Button */}
               <button
@@ -140,11 +146,11 @@ export function Navbar() {
                 ))}
 
                 <a
-                    href="#hire-me"
+                    href="#/cv-optimizer"
                     onClick={() => setOpen(false)}
                     className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
                 >
-                  Hire Me
+                  Cv-Optimizer
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
 
@@ -155,6 +161,15 @@ export function Navbar() {
                 >
                   Blog
                   <ArrowUpRight className="h-4 w-4" />
+                </a>
+
+
+                <a
+                    href="/cv-optimizer"
+                    className="group hidden items-center gap-1.5 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm backdrop-blur-xl transition-all duration-200 hover:-translate-y-0.5 hover:bg-emerald-500/15 hover:shadow-md dark:text-emerald-300 md:inline-flex"
+                >
+                  CV Optimizer
+                  <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
 
               </div>
