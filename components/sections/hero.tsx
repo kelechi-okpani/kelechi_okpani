@@ -161,7 +161,7 @@ export function HeroSection() {
 
                   <img
                     src="/headshot.jpeg"
-                    alt="Kelechi Okpani - Frontend Engineer"
+                    alt="Kelechi Okpani - Software Engineer"
                     className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
                   />
 
@@ -176,7 +176,7 @@ export function HeroSection() {
                           Kelechi Okpani
                         </p>
                         <p className="mt-0.5 text-xs text-white/70">
-                          Frontend Engineer
+                          Software Engineer
                         </p>
                       </div>
 

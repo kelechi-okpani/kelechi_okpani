@@ -102,7 +102,7 @@ function PostCard({ post }: { post: BlogPost }) {
 
                 {post.categories.length > 1 && (
                     <div className="mt-4 flex flex-wrap gap-1.5">
-                        {post.categories.slice(1, 4).map((tag) => (
+                        {post.categories.slice(1, 4).map((tag:any) => (
                             <span
                                 key={tag}
                                 className="rounded-full border border-border/60 bg-background/50 px-2.5 py-1 text-[10px] text-muted-foreground"
@@ -145,7 +145,7 @@ export default function BlogContent({ posts }: BlogContentProps) {
             const matchesCategory =
                 activeCategory === "All" ||
                 post.categories.some(
-                    (category) =>
+                    (category:any) =>
                         category.toLowerCase() === activeCategory.toLowerCase()
                 );
 
@@ -330,7 +330,7 @@ export default function BlogContent({ posts }: BlogContentProps) {
                             <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
                                 {search || activeCategory !== "All"
                                     ? "Articles matching your search"
-                                    : "Practical knowledge for developers"}
+                                    : "Trending topics"}
                             </h2>
                         </div>
 

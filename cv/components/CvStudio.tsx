@@ -130,9 +130,9 @@ export default function CvStudio() {
                                 </div>
 
                                 <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-                                    Your next opportunity
+                                     Turn your CV
                                     <span className="block bg-gradient-to-r from-[#1f7a55] via-emerald-600 to-teal-500 bg-clip-text pb-1 text-transparent dark:from-emerald-400 dark:via-green-400 dark:to-teal-300">
-                    starts with your CV.
+                   Into a stronger match for your next job.
                   </span>
                                 </h2>
 
