@@ -1,6 +1,7 @@
 import type { BlogPost } from "@/lib/blog-types";
 
-const HASHNODE_API = "https://gql-beta.hashnode.com";
+// const HASHNODE_API = "https://gql-beta.hashnode.com";
+const HASHNODE_API:any = process.env.HASHNODE_API;
 const USERNAME = "kelechi-okpani";
 
 const QUERY = `
