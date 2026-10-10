@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     type: 'website',
     url: siteUrl,
     siteName: 'Kelechi Okpani Portfolio',
-    title: 'Kelechi Okpani | Frontend & Full-Stack Engineer',
+    title: 'Kelechi Okpani | Software Engineer',
     description:
-        'Explore the portfolio, projects, and technical writing of Kelechi Okpani, a Software Engineer specializing in React, Next.js, TypeScript, and scalable web applications.',
+        'Explore the portfolio, projects, and technical writing of Kelechi Okpani, a Software Engineer specializing in Javascript, TypeScript, and scalable web & Mobile applications.',
     images: [
       {
         url: '/og-image.png',
